@@ -1,0 +1,12 @@
+  <!-- String interpolation -->
+  <p>Willkommen:</p>
+  <p [textContent]="name"></p>
+  
+  <!-- Binding properties first approach same result -->
+  <!-- <input type="text" (input)="onUsernameInput($event)" value={{name}}>  -->
+
+  <!-- Binding properties second approach same result -->
+  <!-- <input type="text" (input)="onUsernameInput($event)" [value]="name">  -->
+
+  <!-- Two-way-binding -->
+  <input type="text" [(ngModel)]="name"> 
